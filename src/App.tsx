@@ -6,15 +6,14 @@ import Home from './pages/Home';
 import { About } from './pages/About';
 import View from './pages/View';
 import { Portfolio } from './pages/Portfolio';
-import { CreatePost } from './pages/CreatePost';
+import CreatePost from './pages/CreatePost';
 import styled from 'styled-components';
-
+// import Test from './pages/test';
 function App() {
   return (
     <>
       <Router>
         <Header />
-        Hello App
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -22,7 +21,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/create-post" element={<CreatePost />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   );

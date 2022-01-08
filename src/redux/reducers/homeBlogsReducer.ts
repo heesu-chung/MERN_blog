@@ -1,6 +1,5 @@
 import { GET_HOME_BLOGS, IHomeBlogs, IGetHomeBlogsType } from '../types/blogType';
 
-
 const initState: IHomeBlogs[] = [
   {
     _id: 'kkk',
@@ -16,14 +15,12 @@ const initState: IHomeBlogs[] = [
         description: 'this is the first Article',
         thumbnail: null,
         category: 'article',
-        createdAt: null,
-        date: null
+        createdAt: null
       }
     ]
   }
 ];
-
-const homeBlogsReducer = (state: IHomeBlogs[] = initState, action: IGetHomeBlogsType): IHomeBlogs[] => {
+const homeBlogsReducer = (state: IHomeBlogs[] = initState, action: IGetHomeBlogsType) => {
   switch (action.type) {
     case GET_HOME_BLOGS:
       return action.payload;

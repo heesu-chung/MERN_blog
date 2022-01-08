@@ -1,3 +1,4 @@
+// Action Type / Types / Interface
 import { IBlog } from '../../utils/Typescript';
 
 export const GET_HOME_BLOGS = 'GET_HOME_BLOGS';

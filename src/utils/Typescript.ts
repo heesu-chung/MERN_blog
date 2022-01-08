@@ -11,7 +11,9 @@ export interface IBlog {
   thumbnail: string | File | null;
   category: string;
   createdAt: string | null;
-  date: string | null;
+  // date: string | null;
 }
 
 export type RootStore = ReturnType<typeof rootReducer>;
+// for container component
+// rootReducer return value
