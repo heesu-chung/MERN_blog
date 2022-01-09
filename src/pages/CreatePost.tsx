@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import { useDispatch } from 'react-redux';
 import Quill from '../components/editor/ReactQuill';
+import { ReactQuillTest } from '../components/editor/ReactQuillTest';
 import { getAPI } from '../utils/FetchData';
 import { IBlog } from '../utils/Typescript';
 
@@ -68,7 +69,10 @@ const CreatePost: React.FC<Props> = ({ id }) => {
 
   return (
     <div>
-      <Quill setBody={setBody} body={body} />
+      <ReactQuillTest />
+
+      {/* <Quill setBody={setBody} body={body} /> */}
+
       {/* <div
         ref={divRef}
         dangerouslySetInnerHTML={{
